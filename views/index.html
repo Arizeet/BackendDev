@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+        "header header header header header"
+        "aside main main main main"
+        "footer footer footer footer footer";
+    grid-gap: 2px;
+}
+header{
+    background-color: green;
+    color: aliceblue;
+    grid-area: header;
+}
+.navContent{
+    width: 500px;
+    background-color: #017001;
+    /* padding: 20px; */
+}
+.navContent> nav{
+    display: flex;
+    justify-content: space-between;
+}
+.navContent> nav> ul{
+    /* padding: 30px; */
+    margin: 30px;
+}
+
+aside{
+    background-color: red;
+    color: white;
+    grid-area: aside;
+    padding: 10px;
+}
+main{
+    background-color: #ea9d29;
+    color: black;
+    grid-area: main;
+    padding: 10px;
+
+}
+footer{
+    background-color: purple;
+    color: white;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+    <title>Document</title>
+</head>
+
+    <div class="container">
+        <header>
+            <h1>Welcome to Arizeet's Page</h1>
+            <div class="navContent">
+                <nav>
+                    <ul>Home</ul>
+                    <ul>Contact</ul>
+                    <ul>About</ul>
+                    <ul>Services</ul>
+                </nav>
+            </div>
+        </header>
+        <aside>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ut consequatur ratione at dicta optio dignissimos beatae cum in iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iusto repellat placeat quo. Assumenda fugiat quaerat qui accusantium voluptatum numquam, aut, atque doloribus nobis possimus facere sunt hic reprehenderit dolore?
+        </aside>
+        <main>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti eos architecto in nemo repudiandae unde vitae. Modi vel pariatur facere veniam omnis minima, eaque cumque quae inventore iusto, autem nobis magnam vero odit necessitatibus repellat ad esse animi officia molestiae! Nostrum reiciendis voluptatem beatae dicta mollitia. Recusandae sit iure culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil adipisci obcaecati qui quisquam. Quam ad a eum aliquam pariatur rem quidem dignissimos placeat. Commodi quaerat sed sint facilis mollitia nesciunt ipsa eaque perspiciatis exercitationem. Cumque sunt tenetur sit ratione magni repellendus cum illo corporis est suscipit, quasi fugiat voluptas nisi?
+        </main>
+        <footer>
+            Copywrite 2023
+        </footer>
+    </div>
+</body>
+</html>
