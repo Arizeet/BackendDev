@@ -2,16 +2,25 @@
 //1. http module
 const http = require('http');
 const fs = require('fs');
+const _ = require('lodash');
 
 const server = http.createServer((req,res)=>{
     console.log("request access has been made from browser to server");
     // console.log(req.method);
     // console.log(req.url);
-    // res.setHeader('Content-Type','text/html');
+    //Lodash
+    let num = _.random(0,20);
+    console.log(num);
+    let greet = _.once(()=>{
+        console.log("hello");
+    })
+    greet();
+    greet();
+    res.setHeader('Content-Type','text/html');
     // res.write('<h1>Hello, Arizeet</h1>');
     // res.write('<h2>How are u??</h2>');
     // res.end();
-
+    
     let path = './views';
     switch(req.url){
         case '/':
